@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <style>
+
+
+
+    main{
+      width: 50vw;
+      height: 50vh;
+      border: 5px solid red;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      overflow: hidden;
+
+    }
+
+    main>section>div{
+      width: 50vw;
+      height: 50vh;
+
+
+
+    }
+
+    main>section>div:first-child{
+      background-image: url("asset/slide1.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    main>section>div:nth-child(2){
+      background-image: url("asset/slide2.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    main>section>div:nth-child(3){
+      background-image: url("asset/slide3.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    main>section>div:last-child{
+      background-image: url("asset/slide4.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    main>section{
+      display: flex;
+      position: absolute;
+      animation-name: anim;
+      animation-duration: 3s;
+      animation-iteration-count:infinite;
+      animation-direction: alternate;
+
+    }
+
+
+    @keyframes anim {
+      0%,20%{
+        transform: translateX(0);
+      }
+      25%,45%{
+        transform: translateX(-25%);
+      }
+      50%,70%{
+        transform: translateX(-50%);
+      }
+      75%,100%{
+        transform: translateX(-75%);
+      }
+
+    }
+
+  </style>
+
+</head>
+<body>
+<main>
+  <section>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+    <div> </div>
+  </section>
+</main>
+</body>
+</html>
